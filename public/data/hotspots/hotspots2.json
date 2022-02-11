@@ -1,0 +1,27 @@
+[
+    {
+        "pitch": -1,
+        "yaw": 94,
+        "type": "scene",
+        "text": "Door",
+        "sceneId":"scene1",
+        "customDetails":"Go inside",
+        "createTooltipArgs": "Door"
+    },
+    {
+        "pitch": -3,
+        "yaw": 20,
+        "type": "info",
+        "text": "Kiosk",
+        "customDetails":"Object/Point of Interest Details 4",
+        "createTooltipArgs": "Kiosk"
+    },
+    {
+        "pitch": 0,
+        "yaw": -94,
+        "type": "info", 
+        "text": "Souvenirs",
+        "customDetails":"Object/Point of Interest Details 5",
+        "createTooltipArgs": "Souvenirs"
+    }
+]

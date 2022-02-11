@@ -1,0 +1,41 @@
+[
+    {
+        "pitch": 8,
+        "yaw": 85,
+        "type": "info",
+        "text": "Microwave",
+        "customDetails":"Object/Point of Interest Details 1",
+        "customYoutube": "https://youtu.be/5BXdWXH6E-M",
+        "createTooltipArgs": "Microwave"
+    },
+    {
+        "pitch": -15,
+        "yaw": 100,
+        "type": "info",
+        "text": "Stovetop",
+        "customDetails":"Object/Point of Interest Details 2",
+        "createTooltipArgs": "Stovetop",
+        "customImage": "/images/equipment1.jpg"
+    },
+    {
+        "pitch": -25,
+        "yaw": 108,
+        "type": "info",
+        "text": "Oven",
+        "customDetails":"Object/Point of Interest Details 3",
+        "customURL":"https://artbma.org/",
+        "createTooltipArgs": "Oven",
+        "URL": "https://artbma.org/",
+        "linkTitle":"Go to equipment page"
+    },
+    {
+        "id": 3,
+        "pitch": -6,
+        "yaw": -138,
+        "type": "scene",
+        "text": "Exit",
+        "sceneId": "scene2",
+        "customDetails":"Go to the pier",
+        "createTooltipArgs": "Exit"
+    }
+]

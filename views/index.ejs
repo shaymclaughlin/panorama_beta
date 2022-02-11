@@ -1,0 +1,35 @@
+<%- include('template_parts/header') %>
+    <h1><%= title %></h1>
+    <div class="container">
+      <div class="row p-5 m-0">
+        <div id="panorama">
+          <div id="panoramaDetailsPanel" class="panorama-details-panel">
+            <div class="pdp-btn-container">
+              <button id="panoramaDetailsPanelCloseBtn" class="btn btn-secondary pdp-btn">Close</button>
+            </div>
+            <div>
+              <h2 id="panoDetailsPanelTitle" class="pdp-title"></h2>
+            </div>
+            <div>
+              <p id="panoDetailsPanelContent" class="pdp-content"></p>
+              <div class="pdp-image-container">
+                <img class="pdp-image" />
+              </div>
+              <div class="pdp-link-container"></div>
+              <div class="pdp-yt-container">
+                <iframe class="pdp-yt-iframe" width="560" height="315" src="" title="YouTube codevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="pdp-links-wrapper">
+              <h3>Helpful Links</h3>
+              <div class="pdp-links-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row p-5 m-0">
+        <div id="panoramaMore"></div>
+      </div>
+    </div>
+  <%- include('template_parts/footer') %>
