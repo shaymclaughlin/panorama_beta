@@ -1,0 +1,226 @@
+#panorama,#pano {
+    width: 100%;
+    height: 75vh;
+    z-index: 0;
+}
+.panorama-details-panel {
+    position: absolute;
+    color: rgb(22, 22, 22);
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    right: -100%;
+    top: 0;
+    z-index: 9999;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+    overflow-y:scroll;
+}
+.panorama-details-panel div {
+    padding: 1em;
+}
+.panorama-details-panel .pdp-title {
+    background: #1E4D2B;
+    color: #fff;
+    text-align: center;
+    padding: .5em .125em;
+}
+.pdp-btn-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.panorama-details-panel .pdp-yt-iframe {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+.panorama-details-panel .pdp-image {
+    width: 100%;
+    height: auto;
+}
+.panorama-details-panel .pdp-btn {
+    background: #1E4D2B;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: .5em 0;
+    border: none;
+}
+.panorama-details-panel .pdp-links-container {
+    display: flex;
+    flex-direction: column;
+}
+.panorama-details-panel .pdp-links-container span {
+    margin: .5em 0 0 0;
+}
+.panorama-details-panel .pdp-links-container span a {
+    background: #1E4D2B;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: .5em 0;
+    text-align: center;
+    text-decoration: none;
+}
+.panorama-details-panel .pdp-links-container span a:hover {
+    background: #D9782D
+}
+#panoramaDetailsPanel {
+}
+
+.pannellum-hs-custom-title {
+    width: 100%;
+    color: #1E4D2B;   
+}
+.pannellum-hs-custom-details {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+
+.pannellum-hs-custom-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.custom-tooltip span {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+}
+.pannellum-hs-custom-wrapper div {
+    /*border-bottom: 1px solid #999*/
+}
+.pannellum-hs-custom-wrapper div:last-child {
+    border: none;
+}
+div.custom-tooltip:hover span{
+    visibility: visible;
+}
+div.custom-tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+}
+.pannellum-hs-custom-wrapper {
+    background: green;
+}
+/* Toggle Input Check */
+.pannellum-hs-custom-checkboxtogglelabel {    
+    background: #1E4D2B;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: .5em 0;
+}
+.pannellum-hs-custom-checkboxtogglelabel:hover {
+    cursor:pointer;
+    background: #D9782D;
+}
+input.pannellum-hs-custom-checkboxtoggle[type=checkbox] {
+    display: none;
+    width: 0px;
+    height: 0px;    
+}/*
+input.pannellum-hs-custom-checkboxtoggle[type=checkbox]:checked ~ .pannellum-hs-custom-details{
+    display: block;
+}
+input.pannellum-hs-custom-checkboxtoggle[type=checkbox]:checked + .pannellum-hs-custom-wrapper{
+    background: green;
+}
+input.pannellum-hs-custom-checkboxtoggle[type=checkbox]:checked ~ .pannellum-hs-custom-checkboxtogglelabel{
+    background: #D9782D;
+}
+input.pannellum-hs-custom-checkboxtoggle[type=checkbox]:not(:checked) ~ .pannellum-hs-custom-checkboxtogglelabel{
+    background: #1E4D2B;
+}
+*/
+@keyframes example {
+    0% {
+        background: #1E4D2B
+    }    
+    50% {
+        background: #D9782D
+    }
+    100% {
+        background: #1E4D2B
+    }        
+}
+.custom-hotspot {
+    /*scale: 2.1;*/
+    width: 2.15em;
+    height: 2.15em;
+    border-radius: 50%;
+    background:#1E4D2B;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    z-index: 9010;
+}
+
+.custom-hotspot:after {
+    content: "";
+    z-index: 9000;
+    display: inline-block;
+    width: 2.15em;
+    height: 2.15em;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    
+}
+
+.custom-hotspot:after:hover {
+    border: 5px solid #D9782D;
+    cursor: pointer;
+}
+.pnlm-info {
+}
+/* media / responsive */
+@media screen and (max-width: 600px) {
+    .panorama-details-panel { 
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .panorama-details-panel { 
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .panorama-details-panel { 
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .panorama-details-panel { 
+        width: 40%;
+    }
+}
+
+/*PANOMAKER*/
+.panomaker-wrapper .col-6 {
+}
+#panoramaMaker {
+    width: 100%;
+    height: 500px;
+}
+
+/* features list */

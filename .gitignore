@@ -40,7 +40,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-public/stylesheets/
+#public/stylesheets/
 customcss/darkly
 # TypeScript v1 declaration files
 typings/
