@@ -240,14 +240,14 @@ function accessibilitySecondary(options) {
         let titleContainer = document.createElement("div");
         let titleHeading = document.createElement("h4");
         titleHeading.setAttribute("class","pfl-title")
-        console.log(roomsData[roomsKeys[i]])
+        //console.log(roomsData[roomsKeys[i]])
         let hotspotsName = roomsData[roomsKeys[i]].title;
         titleHeading.innerText = hotspotsName;
         let hotspots = roomsData[roomsKeys[i]].hotSpots
         titleContainer.appendChild(titleHeading)
         divContainer.appendChild(titleContainer)
         for (let j=0;j < hotspots.length;j++) {
-            console.log(hotspots[j])
+            //console.log(hotspots[j])
             let featureTitleText = hotspots[j].text;
             let featureContentText = hotspots[j].customDetails;
             let featureContainer = document.createElement("div");
@@ -271,7 +271,7 @@ function accessibilitySecondary(options) {
         pflTitles[i].addEventListener("click",function() {
             //console.log(this.dataset.pitch,this.dataset.yaw) 
             viewerMove(this.dataset.pitch,this.dataset.yaw)        
-            console.log(viewer.getScene())
+            //console.log(viewer.getScene())
         })
     }
 }
